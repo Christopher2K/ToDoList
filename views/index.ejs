@@ -1,0 +1,6 @@
+<%- contentFor('message') %>
+<div></div>
+<%- contentFor('todoList') %>
+<% todolist.forEach(function(todo, index){ %>
+    <li><a href="/todo/supprimer/<%= index %>">X </a><%= todo %></li>
+<% })%>

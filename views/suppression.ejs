@@ -1,0 +1,9 @@
+<%- contentFor('message') %>
+<div class="alert alert-success">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong>Supression effectué !</strong> La tache "<%= tache %>" a bien été retirée.
+</div>
+<%- contentFor('todoList') %>
+<% todolist.forEach(function(todo, index){ %>
+<li><a href="/todo/supprimer/<%= index %>">X </a><%= todo %></li>
+<% })%>
